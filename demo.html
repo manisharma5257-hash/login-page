@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+
+
+body{
+
+font-family: cursive;
+margin: 40px;
+
+color:  black;
+}
+
+h1{
+color: green;
+
+}
+
+button{
+
+padding: 10px;
+
+margin: 10px;
+font-size: 20px;
+border: none;
+
+background-color: lightgreen;
+
+color: black;
+}
+
+
+button:hover{
+background-color: antiquewhite;
+
+}
+
+
+</style>
+</head>
+<body>
+   
+    
+    <h1>Java Script Demo</h1>
+
+<input type="number" id="num1" placeholder="number1">
+   
+<input type="number" id="num2" placeholder="number2">
+
+<button onclick="run()"> run</button>
+
+
+<h3>output</h3>
+<p id="output"></p>
+
+<script>
+
+function run(){
+
+
+const output=document.getElementById('output');
+
+
+output.innerText="";
+
+
+let x=parseInt(document.getElementById('num1').value);
+let y=parseInt(document.getElementById('num2').value);
+
+
+output.innerText +=`x+y= ${x+y}\n`;
+
+output.innerText +=`x-y=${x-y}\n`;
+
+output.innerText +=`x*y=${x*y}\n`;
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
