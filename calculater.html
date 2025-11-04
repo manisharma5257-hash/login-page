@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>sum </h2>
+
+<table>
+
+ <thead>
+<tr>
+<th>Number 1</th>
+<th>Number 2</th>
+<th>Action</th>
+<th>Answer</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td><input type="number" class="num1"></td>
+<td><input type="number" class="num2"></td>
+                
+<td><button onclick="calculate(this)">Add</button></td>
+                
+<td><p class="answer">0</p></td>
+</tr> 
+ <tr>
+<td><input type="number" class="num1"></td>
+<td><input type="number" class="num2"></td>
+<td><button onclick="multiply(this)">multiply</button></td>
+<td><p class="answer">0</p></td>
+</tr>
+
+<tr>
+<td><input type="number" class="num1"></td>
+<td><input type="number" class="num2"></td>
+<td><button onclick="subtraction(this)">subtraction</button></td>
+<td><p class="answer">0</p></td>
+</tr>
+
+
+
+
+
+
+
+
+</tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</table>
+
+
+<script>
+function calculate(button) {
+ const row = button.parentElement.parentElement;
+ const num1 = parseInt(row.querySelector('.num1').value) || 0;
+            const num2 = parseInt(row.querySelector('.num2').value) || 0;
+ const sum = num1 + num2;
+row.querySelector('.answer').textContent = sum;
+}
+
+function multiply(){
+
+ const num1 = parseInt(row.querySelector('.num1').value) || 0;
+  const num2 = parseInt(row.querySelector('.num2').value) || 0;
+const sum=num1*num2;
+
+row.querySelector('.answer').textContent = sum;
+}
+
+function subtraction(){
+const num1 = parseInt(row.querySelector('.num1').value) || 0;
+ const num2 = parseInt(row.querySelector('.num2').value) || 0;
+const sum=num1-num2;
+row.querySelector('.answer').textContent = sum;
+
+}
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
